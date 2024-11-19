@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*--------- Generic Styles --------*/
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/*------- Header Styles ------*/
+
+#top-main-menu ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #000
+}
+
+#top-main-menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+}
+
+#top-main-menu ul li > a {
+    text-decoration: none;
+}
+
+#top-main-menu ul li > a {
+    font-weight: 400;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+#top-main-menu ul li.current-menu-item > a {
+    font-weight: 700;
+    background-color: #fff;
+    color: #000;
+}
+
+#top-main-menu ul li > a:hover {
+    text-decoration: underline;
+}
+
+#top-main-menu ul li ul {
+    display:none;
+    position:absolute;
+    left:0;
+    z-index:300;
+    width:200px;
+    background:#000;
+    text-align: left;
+}
+
+#top-main-menu ul li:hover > ul {
+    display:block;
+}
+
+#top-main-menu .dropdown-toggle .caret {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;    
+    border-top: 5px solid #fff;
+    top: 10px;
+    right: -5px;
+}
+
+#top-main-menu .sub-menu-toggle {
+    display: none;
+}
+
+.entry-content {
+    text-align: center;
+}
+
+.site-content {
+    min-height: 50vh;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.projects-wrapper .project-box{
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 1%;
+    background-color: #fff;
+}
+
+.projects-wrapper .project-box .featured-img-wrap {
+    width: 100%;
+    height: 300px;
+}
+
+.projects-wrapper .project-box .featured-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.projects-wrapper .project-box .prj-title {
+    font-size: 32px;
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.fimg-section {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.fimg-section img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+}
+
+.project-box .fld-wrapper {
+    margin-bottom: 25px;
+}
+
+.project-box .fld-wrapper .field-lbl {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.project-box.dt {
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+
+.project-box .fld-wrapper .field-txt {
+    font-size: 22px;
+    color: #484848;
+    font-weight: 400;
+}
+
+.site-footer {
+    background-color: #cecece;
+    padding: 0;
+}
+
+.site-footer > .site-info {
+    margin: 0;
+    padding: 40px 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-wrapper .project-box {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .project-box.dt {
+        margin-top: 0;
+    }
+
+    .projects-wrapper .project-box .featured-img-wrap {
+        height: 220px;
+    }
+}
+
+
+
+
+
+
+
